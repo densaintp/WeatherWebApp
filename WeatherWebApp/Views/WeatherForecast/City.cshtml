@@ -1,0 +1,34 @@
+﻿@model WeatherWebApp.Models.City
+
+@{
+    ViewData["Title"] = "City";
+}
+
+<div class="widget">
+
+    <div class="left-panel panel">
+        <div class="date">
+            <span>Дата: @Model.Date.ToString("dd MMM yyyy")</span> <br />
+        </div>
+        <div class="city">
+            <span>@Model.Name</span> <br />
+        </div>
+        <div class="temp">
+            <img src="https://codefrog.tech/cp/wp/ts.png" alt="" width="60">
+            <span>@Model.Temperature ℃</span> <br />
+        </div>
+        <div class="city">
+            <span>Влажность: @Model.Humidity %</span> <br />
+        </div>
+        <div class="city">
+            <span>Давление: @Model.Pressure</span> <br />
+        </div>
+        <div class="city">
+            <span>Скорость ветра: @Model.Wind м/с</span> <br />
+        </div>
+        <div class="city">
+            <span>Погода: @Model.Weather</span> <br />
+        </div>
+    </div>
+
+</div>
